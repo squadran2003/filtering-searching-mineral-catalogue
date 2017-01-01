@@ -1,0 +1,274 @@
+{%  load static  from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Macky's Minerals: {% block title %} {% endblock %}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+</head>
+<body>
+  <div class="bounds">
+    <p> filter by letter:</p>
+    <ul class="filter-by-letter">
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='A' %}" >
+                {% if letter == 'A'%}
+                    <span class="search-active">A</span>
+                {% else %}
+                    A
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='B' %}" >
+                {% if letter == 'B'%}
+                    <span class="search-active">B</span>
+                {% else %}
+                    B
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='C' %}" >
+                {% if letter == 'C'%}
+                    <span class="search-active">C</span>
+                {% else %}
+                    C
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='D' %}" >
+                {% if letter == 'D'%}
+                    <span class="search-active">D</span>
+                {% else %}
+                    D
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='E' %}" >
+                {% if letter == 'E'%}
+                    <span class="search-active">D</span>
+                {% else %}
+                    E
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='F' %}" >
+                {% if letter == 'F'%}
+                    <span class="search-active">F</span>
+                {% else %}
+                    F
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='G' %}" >
+                {% if letter == 'G'%}
+                    <span class="search-active">G</span>
+                {% else %}
+                    G
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='H' %}" >
+                {% if letter == 'H'%}
+                    <span class="search-active">H</span>
+                {% else %}
+                    H
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='I' %}" >
+                {% if letter == 'I'%}
+                    <span class="search-active">I</span>
+                {% else %}
+                    I
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='J' %}" >
+                {% if letter == 'J'%}
+                    <span class="search-active">J</span>
+                {% else %}
+                    J
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='K' %}" >
+                {% if letter == 'K'%}
+                    <span class="search-active">K</span>
+                {% else %}
+                    K
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='L' %}" >
+                {% if letter == 'L'%}
+                    <span class="search-active">L</span>
+                {% else %}
+                    L
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='M' %}" >
+                {% if letter == 'M'%}
+                    <span class="search-active">M</span>
+                {% else %}
+                    M
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='N' %}" >
+                {% if letter == 'N'%}
+                    <span class="search-active">N</span>
+                {% else %}
+                    N
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='O' %}" >
+                {% if letter == 'O'%}
+                    <span class="search-active">O</span>
+                {% else %}
+                    O
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='P' %}" >
+                {% if letter == 'P'%}
+                    <span class="search-active">P</span>
+                {% else %}
+                    P
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='Q' %}" >
+                {% if letter == 'Q'%}
+                    <span class="search-active">Q</span>
+                {% else %}
+                    Q
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='R' %}" >
+                {% if letter == 'R'%}
+                    <span class="search-active">R</span>
+                {% else %}
+                    R
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='S' %}" >
+                {% if letter == 'S'%}
+                    <span class="search-active">S</span>
+                {% else %}
+                    S
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='T' %}" >
+                {% if letter == 'T'%}
+                    <span class="search-active">T</span>
+                {% else %}
+                    T
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='U' %}" >
+                {% if letter == 'U'%}
+                    <span class="search-active">U</span>
+                {% else %}
+                    U
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='V' %}" >
+                {% if letter == 'V'%}
+                    <span class="search-active">V</span>
+                {% else %}
+                    V
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='W' %}" >
+                {% if letter == 'W'%}
+                    <span class="search-active">W</span>
+                {% else %}
+                    W
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='X' %}" >
+                {% if letter == 'X'%}
+                    <span class="search-active">X</span>
+                {% else %}
+                    X
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='Y' %}" >
+                {% if letter == 'Y'%}
+                    <span class="search-active">Y</span>
+                {% else %}
+                    Y
+                {% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'minerals:search_by_letter' letter='Z' %}" >
+                {% if letter == 'Z'%}
+                    <span class="search-active">Z</span>
+                {% else %}
+                    Z
+                {% endif %}
+            </a>
+        </li>
+
+
+    </ul>
+    <div class="grid-100">
+      <a href="{% url 'home' %}">
+        <svg class="logo" viewBox="0 0 127.6 84.8" preserveAspectRation="xMinYMin meet">
+          <polygon points="42.7,84.8 49.6,79.4 40,62.5 51.2,43.5 51.2,43.5 25,0 0,55.6 "/>
+          <polygon class="logo--middle" points="52.9,79.5 52.9,79.5 84.8,80.1 59.7,35 43.3,62.4 "/>
+          <polygon points="127.6,61.4 127.6,61.4 110.3,13.5 110.3,13.5 70.3,48.1 70.3,48.1 88.3,80.5 95.3,81.4 95.3,81.4 "/>
+        </svg>
+        <h1 class="logo__name text-centered">Macky's Minerals</h1>
+      </a>
+      <p class="logo__text text-centered">They're not rocks!</p>
+    </div>
+
+      {% block content%}
+      {% endblock %}
+
+  </div>
+  {% block random %}{% endblock%}
+
+</body>
+</html>

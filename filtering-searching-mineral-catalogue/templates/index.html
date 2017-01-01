@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block title %} Welcome to mackys minerals{% endblock %}
+{% block content %}
+<div class="grid-100">
+<p>Minerals are defined as solid, inorganic, naturally occurring substances with a definite chemical formula and general structure. Almost all chemical elements in the Earth's crust are associated with at least one mineral. They vary in color, hardness, density, crystal form, crystal size, transparency, composition, location, and abundance.</p>
+<a  class="button" href="{% url 'minerals:mineral_list' %}">View a list of Macky's minerals </a>
+</div>
+
+{% endblock %}
+
