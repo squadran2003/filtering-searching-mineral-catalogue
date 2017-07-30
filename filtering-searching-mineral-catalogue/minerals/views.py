@@ -19,6 +19,12 @@ def search_by_letter(request,letter):
 	minerals = Mineral.objects.filter(name__startswith=letter)
 	return render(request, 'minerals/minerals.html',{'minerals': minerals,'letter':letter })
 
+def search_by_text(request):
+	if request.method=='POST':
+		text = request.POST['search']
+		minerals = Mineral.objects.filter(name__icontains=text)
+	return render(request, 'minerals/minerals.html',{'minerals': minerals})
+
 
 def random_mineral(request):
 	random_index = random.randint(1, Mineral.objects.count())

@@ -204,16 +204,25 @@ table, p, ul { margin-bottom: 2.5rem; }
 .mineral__formula { font-size: 12px; }
 
 
-
 .filter-by-letter{
     list-style-type: none;
 
 }
+
 .filter-by-letter li{
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+.search-by-group li{
+    display: inline;
+}
+.search-by-group{
+    list-style: none;
 }
 .search-active{
     font-weight: bold;
     text-decoration: underline;
+}
+.search-form{
+    text-align: right;
 }

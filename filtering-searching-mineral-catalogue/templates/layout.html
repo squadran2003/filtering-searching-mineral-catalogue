@@ -13,6 +13,13 @@
 </head>
 <body>
   <div class="bounds">
+    <div class="search-form">
+        <form action="{% url 'minerals:search_by_text'%}" method="POST">
+            {% csrf_token %}
+            <input type="input" name="search"/>
+            <input type='submit' value="search"/>
+        </form>
+    </div>
     <p> filter by letter:</p>
     <ul class="filter-by-letter">
         <li>
@@ -252,6 +259,22 @@
 
 
     </ul>
+    <p>Filter by group:</p>
+    <ul class="search-by-group">
+        <Li><a href="">Silicates|</a></li>
+        <Li><a href="">Oxides|</a></li>
+        <Li><a href="">Sulfates|</a></li>
+        <Li><a href="">Sulfides|</a></li>
+        <Li><a href="">Carbonates|</a></li>
+        <Li><a href="">Halides|</a></li>
+        <Li><a href="">Sulfosalts|</a></li>
+        <Li><a href="">Phosphates|</a></li>
+        <Li><a href="">Borates|</a></li>
+        <Li><a href="">Organic Minerals|</a></li>
+        <Li><a href="">Arsenates|</a></li>
+        <Li><a href="">Native Elements|</a></li>
+        <Li><a href="">Other</a></li>
+    <ul>
     <div class="grid-100">
       <a href="{% url 'home' %}">
         <svg class="logo" viewBox="0 0 127.6 84.8" preserveAspectRation="xMinYMin meet">
@@ -263,7 +286,6 @@
       </a>
       <p class="logo__text text-centered">They're not rocks!</p>
     </div>
-
       {% block content%}
       {% endblock %}
 
