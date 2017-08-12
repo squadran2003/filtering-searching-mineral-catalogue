@@ -103,3 +103,4 @@ ENV/
 /bin
 /lib
 *.db.sqlite3
+/include
