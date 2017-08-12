@@ -10,19 +10,25 @@ def minerals(request):
 	return render(request, 'minerals/minerals.html',{'minerals': minerals })
 
 
-
 def mineral_detail(request, pk):
 	mineral = get_object_or_404(Mineral, pk = pk)
 	return render(request, 'minerals/mineral_detail.html', {'mineral': mineral})
+
 
 def search_by_letter(request,letter):
 	minerals = Mineral.objects.filter(name__startswith=letter)
 	return render(request, 'minerals/minerals.html',{'minerals': minerals,'letter':letter })
 
+
 def search_by_text(request):
 	if request.method=='POST':
 		text = request.POST['search']
 		minerals = Mineral.objects.filter(name__icontains=text)
+	return render(request, 'minerals/minerals.html',{'minerals': minerals})
+
+
+def search_by_group(request,group):
+	minerals = Mineral.objects.filter(group__icontains=group)
 	return render(request, 'minerals/minerals.html',{'minerals': minerals})
 
 

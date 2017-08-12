@@ -3,8 +3,8 @@
 {% load static from staticfiles %}
 {% block title %} mineral details{% endblock %}
 {% block content %}
-<div class="grid-100">
-   <div class="grid-100 mineral__container">
+<div class="grid-80">
+   <div class="grid-80 mineral__container">
       <h1 class="mineral__name">{{ mineral.name|title }}</h1>
       <div class="mineral__image-bg">
         <img class="mineral__image" src="{% static 'images/'%}{{ mineral.name}}.jpg"/>

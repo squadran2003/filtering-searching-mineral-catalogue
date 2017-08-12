@@ -213,9 +213,7 @@ table, p, ul { margin-bottom: 2.5rem; }
     display: inline-block;
     font-size: 1.1em;
 }
-.search-by-group li{
-    display: inline;
-}
+
 .search-by-group{
     list-style: none;
 }

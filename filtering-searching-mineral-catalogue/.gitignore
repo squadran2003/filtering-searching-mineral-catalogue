@@ -1,5 +1,0 @@
-*.DS_STORE
-*.sqlite3
-/bin
-/lib
-*.pip-selfcheck.json

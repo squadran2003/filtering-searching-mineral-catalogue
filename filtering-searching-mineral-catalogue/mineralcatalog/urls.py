@@ -17,13 +17,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
+import debug_toolbar
 
 urlpatterns = [
+    url(r'^__debug__/', include(debug_toolbar.urls)),
     url(r'^admin/', admin.site.urls),
     url(r'minerals/',include('minerals.urls', namespace = 'minerals')),
     url(r'^$', views.index, name='home'),
-	
 
-    
+
+
 ]
 urlpatterns+= staticfiles_urlpatterns()

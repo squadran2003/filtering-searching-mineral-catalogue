@@ -43,7 +43,7 @@ class MineralViewTests(TestCase):
 
 			)
 
-	
+
 	def test_minerals_view(self):
 		resp = self.client.get(reverse('minerals:mineral_list'))
 		self.assertEqual(resp.status_code,200)
@@ -57,3 +57,28 @@ class MineralViewTests(TestCase):
 		self.assertEqual(resp.status_code, 200)
 		self.assertEqual(self.mineral, resp.context['mineral'])
 		self.assertTemplateUsed(resp, 'minerals/mineral_detail.html')
+
+
+	def test_search_by_letter(self):
+		letter = "A".lower()
+		resp = self.client.get(reverse('minerals:search_by_letter',
+										kwargs={'letter':letter}))
+		self.assertEqual(resp.status_code,200)
+		self.assertIn(self.mineral,resp.context['minerals'])
+		self.assertTemplateUsed(resp,'minerals/minerals.html')
+
+
+	def test_search_by_text(self):
+		resp = self.client.post("/minerals/search/text/",{'search':'ab'})
+		self.assertEqual(resp.status_code,200)
+		self.assertIn(self.mineral,resp.context['minerals'])
+		self.assertTemplateUsed(resp,'minerals/minerals.html')
+
+
+	def test_search_by_group(self):
+		group = "Halides"
+		resp = self.client.get(reverse('minerals:search_by_group',
+										kwargs={'group':group}))
+		self.assertEqual(resp.status_code,200)
+		self.assertIn(self.mineral,resp.context['minerals'])
+		self.assertTemplateUsed(resp,'minerals/minerals.html')
