@@ -1,6 +1,6 @@
-# A web application that catalogs minerals, allows you to search the mineral catalogs by groups, letters and text searches 
+## A web application that catalogs minerals, allows you to search the mineral catalogs by groups, letters and text searches 
 
-# Example  code
+## Example  code
 
 ```python
 
@@ -38,14 +38,14 @@
 
 ```
 
-# This application was one of the projects from my TeamTreehouse python web development degree
+### This application was one of the projects from my TeamTreehouse python web development degree
 
 
-#Installation
+##Installation
 
-###### create a virtualenv that uses python3 and then run ```python pip install -r requirements.txt ```
+###### create a virtualenv that uses python3 and then run the below command pip install -r requirements.txt 
 
-#Contributors
+##Contributors
 
 Just myself
 
