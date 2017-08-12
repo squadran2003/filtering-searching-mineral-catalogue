@@ -40,7 +40,7 @@
 
 ### Motivation
 
-This application was the 8th project from my TeamTreehouse python web development degree
+This application was the 8th project from my TeamTreehouse python tech degree programe
 
 
 ## Installation
