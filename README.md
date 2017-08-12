@@ -41,11 +41,11 @@
 ### This application was one of the projects from my TeamTreehouse python web development degree
 
 
-##Installation
+## Installation
 
-###### create a virtualenv that uses python3 and then run the below command pip install -r requirements.txt 
+###### create a virtualenv that uses python3 and then the command pip install -r requirements.txt 
 
-##Contributors
+## Contributors
 
 Just myself
 
