@@ -38,12 +38,14 @@
 
 ```
 
-### This application was one of the projects from my TeamTreehouse python web development degree
+### Motivation
+
+This application was the 8th project from my TeamTreehouse python web development degree
 
 
 ## Installation
 
-###### create a virtualenv that uses python3 and then the command pip install -r requirements.txt 
+create a virtualenv that uses python3 and then the command pip install -r requirements.txt 
 
 ## Contributors
 
