@@ -45,7 +45,7 @@ This application was the 8th project from my TeamTreehouse python tech degree pr
 
 ## Installation
 
-create a virtualenv that uses python3 and then the command pip install -r requirements.txt 
+create a virtualenv that uses python3 and then run the command pip install -r requirements.txt 
 
 ## Contributors
 
