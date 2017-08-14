@@ -61,7 +61,7 @@
             <li>
                 <a href="{% url 'minerals:search_by_letter' letter='E' %}" >
                     {% if letter == 'E'%}
-                        <span class="search-active">D</span>
+                        <span class="search-active">E</span>
                     {% else %}
                         E
                     {% endif %}
@@ -273,19 +273,86 @@
         <div class="grid-20">
             <p>Filter by group:</p>
             <ul class="search-by-group">
-                <Li><a href="{% url 'minerals:search_by_group' group='silicates'%}">Silicates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='oxides'%}">Oxides</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='sulfates'%}">Sulfates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='sulfides'%}">Sulfides</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='carbonates'%}">Carbonates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='halides'%}">Halides</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='sulfosalts'%}">Sulfosalts</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='phosphates'%}">Phosphates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='borates'%}">Borates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='organic minerals'%}">Organic Minerals</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='arsenates'%}">Arsenates</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='native elements'%}">Native Elements</a></li>
-                <Li><a href="{% url 'minerals:search_by_group' group='other'%}">Other</a></li>
+                <Li>
+                    <a href="{% url 'minerals:search_by_group' group='silicates'%}">
+                    {% if group == 'silicates'%}
+                        <strong>Silicates</strong></a>
+                    {% else %}
+                        Silicates</a>
+                    {% endif %}
+                </li>
+                <Li><a href="{% url 'minerals:search_by_group' group='oxides'%}">
+                    {% if group == 'oxides' %}
+                        <strong>Oxides</strong></a></li>
+                    {% else %}
+                        Oxides</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='sulfates'%}">
+                    {% if group == 'sulfates' %}
+                        <strong>Sulfates</strong></a></li>
+                    {% else %}
+                        Sulfates</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='sulfides'%}">
+                    {% if group == 'sulfides' %}
+                        <strong>Sulfides</strong></a></li>
+                    {% else %}
+                        Sulfides</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='carbonates'%}">
+                    {% if group == 'carbonates' %}
+                        <strong>Carbonates</strong></a></li>
+                    {% else %}
+                        Carbonates</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='halides'%}">
+                    {% if group == 'halides' %}
+                        <strong>Halides</strong></a></li>
+                    {% else %}
+                        Halides</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='sulfosalts'%}">
+                    {% if group == 'sulfosalts' %}
+                        <strong>Sulfosalts</strong></a></li>
+                    {% else %}
+                        Sulfosalts</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='phosphates'%}">
+                    {% if group == 'phosphates' %}
+                        <strong>Phosphates</strong></a></li>
+                    {% else %}
+                        Phosphates</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='borates'%}">
+                    {% if group == 'borates' %}
+                        <strong>Borates</strong></a></li>
+                    {% else %}
+                        Borates</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='organic minerals'%}">
+                    {% if group == 'organic minerals' %}
+                        <strong>Organic Minerals</strong></a></li>
+                    {% else %}
+                        Organic Minerals</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='arsenates'%}">
+                    {% if group == 'arsenates'%}
+                        <strong>Arsenates</strong></a></li>
+                    {% else %}
+                        Arsenates</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='native elements'%}">
+                    {% if group == 'native elements'%}
+                        <strong>Native Elements</strong></a></li>
+                    {% else %}
+                        Native Elements</a></li>
+                    {% endif %}
+                <Li><a href="{% url 'minerals:search_by_group' group='other'%}">
+                    {% if group == 'other'%}
+                        <strong>Other</strong></a></li>
+                    {% else %}
+                        Other</a></li>
+                    {% endif %}
             <ul>
         </div>
           {% block content%}
